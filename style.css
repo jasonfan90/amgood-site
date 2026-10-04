@@ -1,0 +1,36 @@
+:root { --paper: #FAF7F1; --ink: #2A2622; --muted: #756C61; --green: #3E7552; --ring: #4F8A64; --hair: #E8E1D5; --card: #FFFDF9; --border: #E3DBCD; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, system-ui, "Helvetica Neue", sans-serif; }
+main { max-width: 40rem; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+h1, h2, .mark, .serif { font-family: ui-serif, "New York", Georgia, serif; font-weight: 400; letter-spacing: -0.015em; }
+.mark { font-size: 1.35rem; color: var(--ink); text-decoration: none; }
+h1 { font-size: 2.4rem; line-height: 1.12; margin: 2.5rem 0 1rem; text-wrap: balance; }
+h2 { font-size: 1.55rem; line-height: 1.2; margin: 3rem 0 0.75rem; }
+h3 { font-size: 1.05rem; margin: 1.75rem 0 0.25rem; }
+p, li { text-wrap: pretty; }
+.lede { font-size: 1.15rem; color: var(--muted); }
+.muted { color: var(--muted); }
+ul { padding-left: 1.2rem; }
+li { margin: 0.35rem 0; }
+a { color: var(--green); }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+.card p { margin: 0.4rem 0; }
+.never { padding-left: 0; }
+.never li { list-style: none; }
+hr { border: 0; border-top: 1px solid var(--hair); margin: 3rem 0 1.5rem; }
+table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.75rem 0.6rem 0; border-top: 1px solid var(--hair); }
+th { font-weight: 600; width: 38%; }
+footer { color: var(--muted); font-size: 0.95rem; }
+footer a { color: var(--muted); margin-right: 1.25rem; }
+footer p { margin: 0.4rem 0; }
+
+/* Home: the card the other person sees. */
+.person { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2rem 1rem 1.75rem; }
+.portrait { width: 132px; height: 132px; border-radius: 50%; border: 4px solid var(--ring); padding: 5px; }
+.portrait span { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; border-radius: 50%; background: #EFE8DB; color: #8C8071; font-family: ui-serif, "New York", Georgia, serif; font-size: 3rem; }
+.person .name { font-family: ui-serif, "New York", Georgia, serif; font-size: 1.9rem; letter-spacing: -0.015em; margin-top: 0.9rem; }
+.person .status { color: var(--green); font-weight: 500; margin-top: 0.15rem; }
+.soon { display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1.4rem; border: 1.5px solid var(--ink); border-radius: 999px; font-weight: 600; font-size: 0.95rem; }
+@media (max-width: 30rem) { h1 { font-size: 2rem; } th { width: 42%; } }

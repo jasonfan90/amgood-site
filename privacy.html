@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AmGood · Privacy</title>
+<meta name="description" content="What AmGood stores about you, who sees it, and what never leaves your phone.">
+<link rel="icon" href="/icon.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+  <a class="mark" href="/">AmGood</a>
+  <h1>What AmGood knows about you, and what it never will.</h1>
+  <p class="lede">The short version: for each day that is already over, we store whether your phone showed any activity. Yes or no. The people you connect with see that, if you let them, and you see the same about them, if they let you.</p>
+  <p class="muted">Last updated September 27, 2026</p>
+
+  <div class="card">
+    <p><strong>We store the name, photo and short note you choose to give us.</strong></p>
+    <p><strong>For each day, we store whether your phone showed activity, yes or no, and share that with the people you connect with, after the day is over.</strong></p>
+  </div>
+
+  <h2>What never leaves your phone</h2>
+  <ul class="never">
+    <li>Never where you are. AmGood does not ask for your location.</li>
+    <li>Never when you're on your phone. No times are recorded or sent.</li>
+    <li>Never anything about today. A day is only reported once it has ended.</li>
+    <li>Never your step count. AmGood reads it on your phone to decide yes or no. The number itself is not sent anywhere.</li>
+    <li>Never your contacts, messages, photos (other than a portrait you pick or take), or which apps you use.</li>
+  </ul>
+
+  <h2>How "activity" is worked out</h2>
+  <p>On iPhone, AmGood reads your step count from Apple Health and your phone's motion history. On Android, it reads your step count from Health Connect and from Google Play services on your phone. If a finished day had more than a few dozen steps, or you opened AmGood that day, or you tapped the "All good" reminder, that day counts as a yes. Your phone does this working-out. Our servers only ever receive the list of days that were a yes. And if you opened AmGood on a given day, that alone counts: the app doesn't read your steps for that day at all.</p>
+  <p>Health and fitness data is used for this one purpose. It is never used for advertising, never sold, and never shared with anyone.</p>
+
+  <h2>Everything we store</h2>
+  <table>
+    <tr><th>Your account</th><td>An identifier from Sign in with Apple or Google, and the email address they pass along. Apple lets you hide your real address; if you do, we only ever see the relay address.</td></tr>
+    <tr><th>Your name</th><td>The name you choose to show. You can change it at any time.</td></tr>
+    <tr><th>Your portrait</th><td>Optional. Only you and the people you're connected with can load it.</td></tr>
+    <tr><th>Your note</th><td>Optional. One short line you can write for the people you're connected with, like "Camping till Sunday". We don't record when you wrote it, and nobody is notified when you change it.</td></tr>
+    <tr><th>Active days</th><td>One entry for each finished day that had activity. No time, no count, no place. Kept for 90 days, then deleted.</td></tr>
+    <tr><th>Your home time zone</th><td>Set once when you join, so your daily update happens at your noon. It does not follow your phone when you travel.</td></tr>
+    <tr><th>Your connections</th><td>Who you've paired with, and the private nickname you give each of them.</td></tr>
+    <tr><th>A widget key</th><td>If you use AmGood's widgets: a random, read-only key that lets them show the same summary the app does, without holding your sign-in. Removed when you sign out.</td></tr>
+    <tr><th>Your phone's push token</th><td>So we can deliver notifications. Removed when you sign out.</td></tr>
+  </table>
+
+  <h2>Who sees what</h2>
+  <p>Only people you pair with, using a six-digit code one of you gives the other. They see your name, your portrait, your note if you've written one, and one line: "All good", or "No activity for 2 days". That line changes once a day at a fixed time, around your noon, never at the moment your phone reports in, so nobody can tell from it when you picked up your phone.</p>
+  <p>You choose, person by person. Sharing starts on in both directions, and either of you can switch your own off for the other at any time. If you do, they see "Sharing off", so it reads as your choice and never as something being wrong, and nothing else about you reaches them. You can always see who has switched theirs off for you. The app shows you exactly what others see about you, word for word.</p>
+  <p>You can pause at any time without giving a reason, and you can disconnect from anyone.</p>
+
+  <h2>Who helps us run it</h2>
+  <ul>
+    <li><strong>Supabase</strong> hosts the database and sign-in, in the United States (Virginia).</li>
+    <li><strong>Apple</strong> and <strong>Google</strong> deliver push notifications and handle sign-in.</li>
+  </ul>
+  <p>No advertising networks. No analytics companies. No data brokers. We don't sell data and we don't share it for anyone's marketing.</p>
+
+  <h2>Deleting everything</h2>
+  <p>In the app: the Settings tab, then Delete account. Your account, name, portrait, note, active days, connections and push token are deleted straight away, and your Sign in with Apple authorisation is revoked. People you were connected with simply stop seeing you.</p>
+
+  <h2>Not an emergency service</h2>
+  <p>AmGood tells you that a day which is already over was fine. It can be a day or two behind by design. It does not detect emergencies and must not be relied on for anyone's safety.</p>
+
+  <h2>Children</h2>
+  <p>AmGood is not for children under 13, and we do not knowingly collect information from them.</p>
+
+  <h2>Changes and questions</h2>
+  <p>If this policy changes in a way that matters, the app will tell you before it takes effect. Questions, or a request for a copy of your data: <a href="mailto:hello@amgood.app">hello@amgood.app</a>.</p>
+  <hr>
+  <footer>
+    <p><a href="/">Home</a><a href="/support">Support</a><a href="mailto:hello@amgood.app">hello@amgood.app</a></p>
+    <p>AmGood is made by JP AI LAB LLC.</p>
+  </footer>
+</main>
+</body>
+</html>
